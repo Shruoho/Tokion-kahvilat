@@ -1,0 +1,181 @@
+body {
+  font-family: 'Roboto Serif', sans-serif;
+  margin: 0px;
+}
+
+.containerYläosa {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.containerOtsikko {
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+  padding-top: 38px;
+  padding-bottom: 15px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 70px;
+  color: #D1A09A;
+}
+
+.containerEsittely {
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+  margin-left: 5em;
+  margin-right: 5em;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  font-size: 25px;
+  font-family: 'Roboto Serif', sans-serif;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-left: 3em;
+  padding: 3em;
+  text-align: center;
+  font-family: 'Roboto Serif', sans-serif;
+  font-size: 15px;
+}
+
+/*Navigaatioon vaikuttavat muotoilut*/
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 38px;
+  
+}
+
+.left-side {
+  display: flex;
+  
+}
+
+.nav-wrapper>.left-side>div {
+  margin-right: 20px;
+  text-transform: none;
+  font-size: 20px;
+  font-family: 'Roboto Serif', sans-serif;
+
+}
+
+.nav-link-wrapper {
+  height: 22px;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5s;
+}
+
+.active-nav-link {
+  border-bottom: 1px solid #D1A09A;
+}
+
+.active-nav-link a {
+  color: #D1A09A !important;
+}
+
+.nav-link-wrapper a {
+  color: #8a8a8a;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover {
+  border-bottom: 1px solid #D1A09A;
+}
+
+.brand {
+  color: #D1A09A;
+  font-family: 'Dancing Script', cursive;
+  font-size: 25px;
+  
+}
+
+.nav-link-wrapper a:hover {
+  color: #D1A09A;
+}
+
+/*Kuvien asettelu*/
+.portfolio-items-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.portfolio-item-wrapper {
+  position: relative;
+}
+
+.portfolio-img-background {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 667px;
+  width: 100%;
+}
+
+.img-text-wrapper {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.img-text-wrapper .subtitle {
+  transition: 1s;
+  color: transparent;
+}
+
+.image-blur {
+  transition: 1s;
+  filter: brightness(40%);
+  width: 40%;
+}
+
+.img-text-wrapper:hover .subtitle {
+  color: whitesmoke;
+  
+  font-family: 'Roboto Serif', sans-serif;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.logo-wrapper img {
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+.two-column-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.profile-image-wrapper img {
+  width: 100%;
+}
+
+.profile-content-wrapper {
+  padding: 30px;
+}
+
+.profile-content-wrapper h1 {
+  color: #D1A09A;
+  font-family: 'Dancing Script', cursive;
+  font-weight: lighter;
+  font-size: 40px;
+}
+
+.profile-content-wrapper p {
+  color: black;
+  font-family: 'Roboto Serif', sans-serif;
+  font-size: 18px;
+}
+
+
